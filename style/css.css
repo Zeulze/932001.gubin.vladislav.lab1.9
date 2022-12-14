@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, serif;
+    font-size: 24px;
+}
+
+.wrapper {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 0 10px 10px;
+    border: 2px solid cornflowerblue;
+
+}
+
+.digit-panel {
+    width: 190px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+
+    border: 1px solid grey;
+
+    text-align: right;
+    vertical-align: center;
+
+    white-space: nowrap;
+
+    overflow: auto;
+}
+
+.current {
+    font-weight: bold;
+}
+
+.previous {
+    color: grey;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.button:not(:nth-of-type(5n)){
+    margin-right: 10px;
+}
+
+.button:active {
+    border-color: cornflowerblue;
+}
+
+.zero {
+    width: 70px;
+}
+
+.idk-how-to-name {
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.equality {
+    height: 70px;
+}
+
+
+
+
