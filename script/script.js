@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
           panelCurr.textContent = `${target.textContent}`;
         else if (
           panelCurr.textContent === "Infinity" ||
-          panelCurr.textContent === "-Infinity"
+          panelCurr.textContent === "-Infinity" ||
+          panelCurr.textContent === "NaN"
         ) {
           panelCurr.textContent = `${target.textContent}`;
         } else {
@@ -78,7 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (
           panelCurr.textContent !== "" &&
           panelCurr.textContent !== "Infinity" &&
-          panelCurr.textContent !== "-Infinity"
+          panelCurr.textContent !== "-Infinity" &&
+          panelCurr.textContent !== "NaN"
         ) {
           panelCurr.textContent = panelCurr.textContent.slice(
             0,
@@ -89,7 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
           panelCurr.textContent === "" ||
           panelCurr.textContent === "-" ||
           panelCurr.textContent === "Infinity" ||
-          panelCurr.textContent === "-Infinity"
+          panelCurr.textContent === "-Infinity" ||
+          panelCurr.textContent === "NaN"
         )
           panelCurr.textContent = "0";
       }
