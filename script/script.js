@@ -68,7 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (target.classList.contains("dot")) {
-        if (!panelCurr.textContent.includes("."))
+        if (
+          !panelCurr.textContent.includes(".") &&
+          !panelCurr.textContent.includes("NaN") &&
+          !panelCurr.textContent.includes("Infinity") &&
+          !panelCurr.textContent.includes("-Infinity")
+        )
           panelCurr.textContent += `${target.textContent}`;
       }
 
