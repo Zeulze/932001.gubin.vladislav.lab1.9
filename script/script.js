@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (target.classList.contains("dot")) {
-        panelCurr.textContent += `${target.textContent}`;
+        if (!panelCurr.textContent.includes("."))
+          panelCurr.textContent += `${target.textContent}`;
       }
 
       if (target.classList.contains("equality")) {
